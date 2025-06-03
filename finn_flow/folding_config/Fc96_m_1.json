@@ -1,0 +1,150 @@
+{
+  "Defaults": {},
+  "FMPadding_Batch_0": {
+    "SIMD": 2
+  },
+  "ConvolutionInputGenerator_rtl_0": {
+    "SIMD": 2,
+    "ram_style": "auto",
+    "parallel_window": 1
+  },
+  "MatrixVectorActivation_0": {
+    "PE": 96,
+    "SIMD": 6,
+    "ram_style": "auto",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingMaxPool_Batch_0": {
+    "PE": 96
+  },
+  "FMPadding_Batch_1": {
+    "SIMD": 96
+  },
+  "ConvolutionInputGenerator_rtl_1": {
+    "SIMD": 96,
+    "ram_style": "auto",
+    "parallel_window": 1
+  },
+  "MatrixVectorActivation_1": {
+    "PE": 48,
+    "SIMD": 288,
+    "ram_style": "auto",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingMaxPool_Batch_1": {
+    "PE": 96
+  },
+  "FMPadding_Batch_2": {
+    "SIMD": 96
+  },
+  "ConvolutionInputGenerator_rtl_2": {
+    "SIMD": 96,
+    "ram_style": "auto",
+    "parallel_window": 1
+  },
+  "MatrixVectorActivation_2": {
+    "PE": 24,
+    "SIMD": 288,
+    "ram_style": "auto",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingMaxPool_Batch_2": {
+    "PE": 96
+  },
+  "FMPadding_Batch_3": {
+    "SIMD": 96
+  },
+  "ConvolutionInputGenerator_rtl_3": {
+    "SIMD": 96,
+    "ram_style": "auto",
+    "parallel_window": 1
+  },
+  "MatrixVectorActivation_3": {
+    "PE": 12,
+    "SIMD": 288,
+    "ram_style": "auto",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingMaxPool_Batch_3": {
+    "PE": 96
+  },
+  "FMPadding_Batch_4": {
+    "SIMD": 96
+  },
+  "ConvolutionInputGenerator_rtl_4": {
+    "SIMD": 96,
+    "ram_style": "auto",
+    "parallel_window": 1
+  },
+  "MatrixVectorActivation_4": {
+    "PE": 6,
+    "SIMD": 288,
+    "ram_style": "auto",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingMaxPool_Batch_4": {
+    "PE": 96
+  },
+  "FMPadding_Batch_5": {
+    "SIMD": 96
+  },
+  "ConvolutionInputGenerator_rtl_5": {
+    "SIMD": 96,
+    "ram_style": "auto",
+    "parallel_window": 1
+  },
+  "MatrixVectorActivation_5": {
+    "PE": 3,
+    "SIMD": 288,
+    "ram_style": "auto",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingMaxPool_Batch_5": {
+    "PE": 96
+  },
+  "FMPadding_Batch_6": {
+    "SIMD": 96
+  },
+  "ConvolutionInputGenerator_rtl_6": {
+    "SIMD": 96,
+    "ram_style": "auto",
+    "parallel_window": 1
+  },
+  "MatrixVectorActivation_6": {
+    "PE": 2,
+    "SIMD": 288,
+    "ram_style": "auto",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingMaxPool_Batch_6": {
+    "PE": 96
+  },
+  "MatrixVectorActivation_7": {
+    "PE": 1,
+    "SIMD": 96,
+    "ram_style": "auto",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "MatrixVectorActivation_8": {
+    "PE": 1,
+    "SIMD": 16,
+    "ram_style": "auto",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "MatrixVectorActivation_9": {
+    "PE": 1,
+    "SIMD": 4,
+    "ram_style": "auto",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  }
+}

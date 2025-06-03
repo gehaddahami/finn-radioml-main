@@ -1,0 +1,16 @@
+{
+  "total_cost": {
+    "discount_sparsity": true,
+    "mem_o_SCALEDINT<32>": 898.0,
+    "mem_w_SCALEDINT<8>": 12360.0,
+    "op_mac_INT2_SCALEDINT<8>": 3072.0,
+    "op_mac_SCALEDINT<2>_SCALEDINT<8>": 15360.0,
+    "total_bops": 294912.0,
+    "total_macs": 18432.0,
+    "total_mem_o_bits": 28736.0,
+    "total_mem_o_elems": 898.0,
+    "total_mem_w_bits": 98880.0,
+    "total_mem_w_elems": 12360.0,
+    "unsupported": "set()"
+  }
+}

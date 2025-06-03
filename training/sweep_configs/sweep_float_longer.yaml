@@ -1,0 +1,46 @@
+project: RadioML
+entity: felixj
+program: train_wandb.py
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+name: float_longer
+#description:
+method: grid # grid, random, or bayes
+#metric:
+  #name:
+  #goal: maximize
+#early_terminate:
+parameters:
+  base_topology: 
+    value: "VGG10_float_v1"
+  filters_conv:
+    values:
+    - 32
+    - 64
+  filters_dense: 
+    value: 128
+  dropout_conv : 
+    value: 0.0
+  dropout_dense: 
+    value: 0.0
+  batch_size:
+    value: 1024
+  epochs: 
+    value: 50
+  lr:
+    value: 0.01
+  lr_scheduler: # EXP or CAWR
+    values:
+    - "CAWR"
+  lr_scheduler_halflife: # only for EXP: half life in epochs
+    value: 10 
+  lr_scheduler_t0: # only for CAWR: t_0
+    value: 5
+  lr_scheduler_tmult: # only for CAWR: t_mult
+    value: 1
+  train_snr_cutoff: # do not train on data below this SNR (in dB)
+    values:
+    - -6
+    - 6

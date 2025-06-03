@@ -1,0 +1,9 @@
+{
+  "Defaults": {},
+  "ChannelwiseOp_0": {
+    "preferred_impl_style": ""
+  },
+  "LabelSelect_0": {
+    "preferred_impl_style": ""
+  }
+}

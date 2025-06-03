@@ -1,0 +1,52 @@
+project: RadioML
+entity: felixj
+program: train.py
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+name: float_optimize_64
+#description:
+method: bayes # grid, random, or bayes
+metric:
+  name: test_acc_30dB
+  goal: maximize
+  #target:
+#early_terminate:
+parameters:
+  base_topology: 
+    value: "VGG10_float_v1"
+  filters_conv:
+    value: 64
+  filters_dense: 
+    value: 128
+  dropout_conv : 
+    min: 0.0
+    max: 0.03
+  dropout_dense: 
+    min: 0.0
+    max: 0.3
+  batch_size:
+    values:
+    - 512
+    - 1024
+    - 2048
+  epochs: 
+    value: 50
+  lr:
+    value: 0.01
+  lr_scheduler: # EXP or CAWR
+    values:
+    #- "EXP"
+    - "CAWR"
+  lr_scheduler_halflife: # only for EXP: half life in epochs
+    value: 10 
+  lr_scheduler_t0: # only for CAWR: t_0
+    min: 4
+    max: 10
+  lr_scheduler_tmult: # only for CAWR: t_mult
+    min: 1.0
+    max: 2.0
+  train_snr_cutoff: # do not train on data below this SNR (in dB)
+    values:
+    - 6

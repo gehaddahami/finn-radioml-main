@@ -1,0 +1,69 @@
+project: RadioML
+entity: felixj
+program: train_wandb.py
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+name: quant_channelwise_scaling
+#description:
+method: grid # grid, random, or bayes
+#metric:
+  #name:
+  #goal: maximize
+#early_terminate:
+parameters:
+  base_topology: 
+    value: "VGG10_quant_v1"
+  filters_conv:
+    value: 32
+  filters_dense: 
+    value: 128
+  dropout_conv : 
+    value: 0.0
+  dropout_dense: 
+    value: 0.0
+  batch_size:
+    value: 1024
+  epochs: 
+    value: 60
+  lr:
+    value: 0.01
+  lr_scheduler: # EXP or CAWR
+    values:
+    #- "EXP"
+    - "CAWR"
+  lr_scheduler_halflife: # only for EXP: half life in epochs
+    value: 10 
+  lr_scheduler_t0: # only for CAWR: t_0
+    value: 5
+  lr_scheduler_tmult: # only for CAWR: t_mult
+    value: 1
+  train_snr_cutoff: # do not train on data below this SNR (in dB)
+    values:
+    - -6
+    - 6
+  in_quant_range:
+    value: 2.0
+  in_quant_bits:
+    value: 8
+  a_bits_l1: #first layer
+    values:
+    - 4
+  w_bits_l1: #first layer
+    values:
+    - 4
+  a_bits:
+    values:
+    - 4
+  w_bits:
+    values:
+    - 4
+  a_quant_type: # ReLU or Linear
+    value: "ReLU"
+  a_quant_min: # only for Linear
+    value: -1.0
+  a_quant_max: # only for Linear
+    value: 1.0
+  w_quant_channelwise_scaling:
+    value: True

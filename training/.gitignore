@@ -1,0 +1,9 @@
+checkpoints
+tflite/model_trained
+*.tflite
+*.log
+wandb
+trained_models
+venv_train
+export
+*.npy

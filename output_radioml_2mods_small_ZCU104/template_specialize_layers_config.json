@@ -1,0 +1,45 @@
+{
+  "Defaults": {},
+  "Thresholding_0": {
+    "preferred_impl_style": ""
+  },
+  "StreamingMaxPool_0": {
+    "preferred_impl_style": ""
+  },
+  "FMPadding_0": {
+    "preferred_impl_style": ""
+  },
+  "ConvolutionInputGenerator_0": {
+    "preferred_impl_style": ""
+  },
+  "MVAU_0": {
+    "preferred_impl_style": ""
+  },
+  "Thresholding_1": {
+    "preferred_impl_style": ""
+  },
+  "StreamingMaxPool_1": {
+    "preferred_impl_style": ""
+  },
+  "MVAU_1": {
+    "preferred_impl_style": ""
+  },
+  "Thresholding_2": {
+    "preferred_impl_style": ""
+  },
+  "MVAU_2": {
+    "preferred_impl_style": ""
+  },
+  "Thresholding_3": {
+    "preferred_impl_style": ""
+  },
+  "MVAU_3": {
+    "preferred_impl_style": ""
+  },
+  "ChannelwiseOp_0": {
+    "preferred_impl_style": ""
+  },
+  "LabelSelect_0": {
+    "preferred_impl_style": ""
+  }
+}

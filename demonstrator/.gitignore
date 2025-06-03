@@ -1,0 +1,9 @@
+.Xil
+slprj
+generate_*
+
+*.log
+*.jou
+*.htm
+
+*.slxc

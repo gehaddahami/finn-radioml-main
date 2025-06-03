@@ -1,0 +1,27 @@
+{
+  "os": "Linux-6.8.0-59-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.12",
+  "startedAt": "2025-06-02T12:36:50.948219Z",
+  "program": "/home/gehad/Desktop/finn-radioml-main/training/train_paper.py",
+  "codePath": "training/train_paper.py",
+  "email": "dahami.gehad@gmail.com",
+  "root": "/home/gehad/Desktop/finn-radioml-main",
+  "host": "ceg-387",
+  "executable": "/bin/python3",
+  "codePathLocal": "training/train_paper.py",
+  "cpu_count": 16,
+  "cpu_count_logical": 24,
+  "disk": {
+    "/": {
+      "total": "982820896768",
+      "used": "623970369536"
+    }
+  },
+  "memory": {
+    "total": "67128414208"
+  },
+  "cpu": {
+    "count": 16,
+    "countLogical": 24
+  }
+}
